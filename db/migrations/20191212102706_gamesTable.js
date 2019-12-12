@@ -6,7 +6,7 @@ exports.up = function(connection) {
       .notNullable();
     gamesTable.string('platform').notNullable();
     gamesTable.string('genre').notNullable();
-    gamesTable.timestamp('release_date').defaultTo(connection.fn.now());
+    gamesTable.date('release_date').notNullable();
     gamesTable.integer('no_of_players').defaultTo(1);
     gamesTable.string('publisher').notNullable();
     gamesTable.string('boxart').notNullable();

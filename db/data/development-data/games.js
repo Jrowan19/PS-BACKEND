@@ -3,7 +3,7 @@ module.exports = [
     name: 'Fifa 2020',
     platform: 'PS4',
     genre: 'sport',
-    release_date: 1569542400,
+    release_date: new Date(2019, 09, 27),
     no_of_players: 4,
     publisher: 'EA Sports',
     boxart: 'https://i.ebayimg.com/images/g/3UYAAOSwpS9db8Gs/s-l300.jpg'
@@ -12,7 +12,7 @@ module.exports = [
     name: 'Red Dead Redemption 2',
     platform: 'PS4',
     genre: 'Action',
-    release_date: 1540771200,
+    release_date: new Date(2018, 10, 29),
     no_of_players: 2,
     publisher: 'Rockstar Games',
     boxart:
@@ -22,7 +22,7 @@ module.exports = [
     name: 'Shadow of the Tomb Raider',
     platform: 'PS4',
     genre: 'Action',
-    release_date: 1536883200,
+    release_date: new Date(2018, 09, 14),
     no_of_players: 2,
     publisher: 'Square Enix LTD',
     boxart:
@@ -32,7 +32,7 @@ module.exports = [
     name: 'Grand Theft Auto V',
     platform: 'PS4',
     genre: 'Action',
-    release_date: 1416268800,
+    release_date: new Date(2014, 11, 18),
     no_of_players: 2,
     publisher: 'Rockstar Games',
     boxart:
