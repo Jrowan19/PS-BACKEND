@@ -32,3 +32,18 @@ exports.insertGame = ({
       else return gameData[0];
     });
 };
+
+exports.getGameByName = ({ name }) => {
+  return connection
+    .select('games.*')
+    .from('games')
+    .where('games.name', name)
+    .then(gameData => {
+      if (!gameData.length)
+        return Promise.reject({
+          status: 404,
+          msg: `Game ${name} Not Found`
+        });
+      else return gameData[0];
+    });
+};
